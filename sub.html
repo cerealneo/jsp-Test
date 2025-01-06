@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<HTML>
+<HEAD>
+<META http-equiv="Content-Type" content="text/html;charset=euc-kr">
+<TITLE>개인 정보 입력 화면</TITLE>
+</HEAD>
+<BODY>
+	<H2>설문조사 확인여부</H2>
+	<FORM ACTION=result METHOD=POST>
+		이름: <INPUT TYPE=TEXT NAME=NAME><BR> 
+		주소: <INPUT TYPE=TEXT NAME=ADDRESS><BR>
+		<BR>
+		메일: <INPUT TYPE=TEXT NAME=MAIL><BR><BR>
+		성별: 남<INPUT TYPE=RADIO NAME=GENDER VALUE=MALE> 
+		    여<INPUT TYPE=RADIO NAME=GENDER VALUE=FEMAIL><BR><BR> 
+		    설문조사 결과 확인 여부 : 전화 확인<INPUT TYPE=CHECKBOX NAME=INOTICE> 
+		    메일 확인<INPUT TYPE=CHECKBOX NAME=CNOTICE> 
+		    요청하지않음<INPUT TYPE=CHECKBOX NAME=DNOTICE><BR><BR> 
+		    거주지역 <SELECT NAME=AREA>
+			<OPTION>서울</OPTION>
+			<OPTION>부산</OPTION>
+			<OPTION>기타</OPTION>
+		</SELECT><BR>
+		<BR> <INPUT TYPE=RESET VALUE="취소"> 
+		     <INPUT TYPE=SUBMIT VALUE="확인">
+		     <INPUT TYPE=SUBMIT VALUE="저장">
+	</FORM>
+</BODY>
+</HTML>
